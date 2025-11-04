@@ -1,0 +1,373 @@
+section {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.background {
+  position: relative;
+  width: 750px;
+  height: 500px;
+  background-image: url(Fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.mario {
+  position: absolute;
+  bottom: 60px;
+  left: 100px;
+  width: 80px;
+  animation: moveMario 4s linear infinite alternate;
+  z-index: 2;
+}
+
+.goomba {
+  position: absolute;
+  bottom: 60px;
+  right: 100px;
+  width: 60px;
+  animation: moveGoomba 3s linear infinite alternate;
+  z-index: 2;
+}
+
+
+.clickable {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.coin {
+  width: 40px;
+}
+
+.block {
+  width: 60px;
+}
+
+.coin1 { top: 100px; left: 150px; }
+.coin2 { top: 150px; right: 200px; }
+.block1 { top: 250px; left: 300px; }
+.block2 { top: 250px; right: 280px; }
+
+.clickable:hover {
+  transform: scale(1.2);
+}
+
+.contador {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+}
+
+
+@keyframes moveMario {
+  0% { left: 100px; }
+  100% { left: 550px; }
+}
+
+@keyframes moveGoomba {
+  0% { right: 100px; }
+  100% { right: 550px; }
+}
+
+
+
+section {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.fondo {
+  position: relative;
+  left: 50px;
+  top: -700px;
+  width: 750px;
+  height: 500px;
+  background-image: url(fondo\ playa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.cangrejo {
+  position: absolute;
+  bottom: 60px;
+  left: 100px;
+  width: 80px;
+  animation: moveMario 4s linear infinite alternate;
+  z-index: 2;
+}
+
+.sol {
+  position: absolute;
+  bottom: 6S0px;
+  right: 100px;
+  width: 80px;
+  animation: moveGoomba 3s linear infinite alternate;
+  z-index: 2;
+}
+
+
+.clickable {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.coin {
+  width: 40px;
+}
+
+.block {
+  width: 60px;
+}
+
+.pelota1 { top: 100px; left: 150px; }
+.pelota2 { top: 150px; right: 200px; }
+.pelota1 { top: 250px; left: 300px; }
+.pelota2 { top: 250px; right: 280px; }
+
+.clickable:hover {
+  transform: scale(1.2);
+}
+
+.contador {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+}
+
+
+@keyframes movesteve {
+  0% { left: 100px; }
+  100% { left: 550px; }
+}
+
+@keyframes movezombie {
+  0% { right: 100px; }
+  100% { right: 550px; }
+}
+
+
+
+section {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.carretera {
+  position: relative;
+  left: 50px ;
+  top:-1300px ;
+  width: 750px;
+  height: 500px;
+  background-image: url(escena-casa-jardin_1308-97666.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.carro {
+  position: absolute;
+  bottom: 60px;
+  left: 100px;
+  width: 80px;
+  animation: moveMario 4s linear infinite alternate;
+  z-index: 2;
+}
+
+.lambo  {
+  position: absolute;
+  bottom: 6S0px;
+  right: 100px;
+  width: 80px;
+  animation: moveGoomba 3s linear infinite alternate;
+  z-index: 2;
+  top: 63%;
+}
+
+
+.clickable {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.coin {
+  width: 40px;
+}
+
+.block {
+  width: 60px;
+}
+
+.coin1 { top: 100px; left: 150px; }
+.coin2 { top: 150px; right: 200px; }
+.block1 { top: 250px; left: 300px; }
+.block2 { top: 250px; right: 280px; }
+
+.clickable:hover {
+  transform: scale(1.2);
+}
+
+.contador {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+}
+
+
+@keyframes movecarro {
+  0% { left: 100px; }
+  100% { left: 550px; }
+}
+
+@keyframes movezombie {
+  0% { right: 100px; }
+  100% { right: 550px; }
+}
+
+
+
+
+
+
+
+.game-container .flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 48px;
+  display: block;
+  object-fit: contain;
+  z-index: 7;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  opacity: 0.95;
+}
+.game-container .flecha.I { 
+  left: 12px;
+ }
+.game-container .flecha.d {
+   right: 12px; 
+  }
+.game-container .flecha:hover { 
+  transform: translateY(-50%) scale(1.06);
+   opacity: 1; }
+
+
+.escena {
+   display: none; 
+  margin: 0 auto;
+   text-align: center; 
+  }
+.escena.activa { 
+  display: block;
+ }
+
+
+.escenas-wrapper {
+   position: relative; 
+  width: 750px; }
+
+
+.btn-anterior,
+.btn-siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 9;
+}
+.btn-anterior { 
+  left: -18px; 
+}
+.btn-siguiente {
+   right: -18px; 
+  }
+.btn-anterior:hover, .btn-siguiente:hover { 
+  background: rgba(0,0,0,0.7); 
+}
+
+
+.miniaturas { display: flex; 
+  justify-content: center; gap: 10px; 
+  margin-top: 12px; 
+}
+.miniatura { 
+  width: 120px; 
+  height: 80px; 
+  object-fit: cover; 
+  cursor: pointer; 
+  border: 3px solid transparent; 
+  border-radius: 6px; 
+}
+
+.miniatura.active { 
+  border-color: #ffd400;
+ }
+
+
+
+@media (max-width: 800px) 
+{
+  .game-container, .background { width: 95vw; 
+    height: calc(95vw * 500/750); }
+}
+
+
+.png{ 
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
