@@ -5,55 +5,66 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Orbitron', sans-serif;
-  background-image: url(ChatGPT\ Image\ 11\ nov\ 2025\,\ 15_18_37.png);
-  color: black;    
-  overflow-x: hidden;
-}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./ChatGPT\ Image\ 11\ nov\ 2025\,\ 15_18_37.png);
+  background-size: cover;
+  background-position: center;
+  color: #2F1B14;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; 
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5%;
-  background: #A0522D;
+  padding: 1.5rem;
+  background: #8B4513; 
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(6px);
+  z-index: 1;
+  
 }
 
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
-  color:black;
+  color: #FFD700;
 }
 
 .logo span {
-  color: #5F421C;
+  color: #D2691E; 
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a {
-  color: black;
+  color: #F5F5DC; 
   margin-left: 2rem;
   text-decoration: none;
-  transition: color 0.3s;
-}
 
-.nav-links a:hover {
-  color: #0e0d0d;
-}
-
-.nav-links .btn {
-  background: #111111;
-  padding: 0.6rem 1rem;
-  border-radius: 5px;
   font-weight: 600;
 }
 
+.nav-links a:hover {
+  color: #FFD700; 
+}
+
+.nav-links .btn {
+  background: #CD853F; 
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #2F1B14;
+  border: 2px solid #8B4513;
+}
 
 .hero {
   height: 100vh;
@@ -65,54 +76,69 @@ body {
 }
 
 .hero-content {
-  max-width: 850%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  color: #0e0d0d;
-  letter-spacing: 2px;
+  color: #FFD700; 
+ 
+ 
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #ccc;
+  color: #F5F5DC; 
   margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .hero-buttons .btn {
   text-decoration: none;
-  color: #fff;
+  color: #2F1B14;
   padding: 0.8rem 1.8rem;
-  margin: 0 0.5rem;
   border-radius: 6px;
   font-weight: 600;
-  transition: background 0.3s, transform 0.3s;
+  
 }
 
 .btn.primary {
-  background: #141414;
+  background: #FFD700; 
 }
 
 .btn.secondary {
-  border: 2px solid #0f0f0f;
+  border: 2px solid #FFD700; 
+  background: transparent;
+  color: #FFD700;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-}
+
 
 
 .characters {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 5rem 10%;
-  background:  #FFCC99;}
+  background: #F5DEB3; 
+  border-top: 2px solid #8B4513;
+  border-bottom: 2px solid #8B4513;
+}
 
 .characters h2 {
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: #111111;
+  color: #2F1B14;
+  
 }
 
 .card-container {
@@ -123,50 +149,45 @@ body {
 }
 
 .card {
-  background: #5F421C;
-  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  background: #CD853F; 
+  border: 2px solid #8B4513;
   border-radius: 10px;
   width: 250px;
-  transition: transform 0.3s, box-shadow 0.3s;
+ 
 }
 
 .card img {
-  width: 40%;
+  width: 100%;
   border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid #8B4513;
 }
 
 .card h3 {
   padding: 1rem;
   font-size: 1.2rem;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px ;
-}
-
-
-.footer {
+  color: #2F1B14;
   text-align: center;
-  padding: 2rem;
-  background: #5F421C;
-  color: #777;
-  font-size: 0.9rem;
 }
-
 
 
 
 .capitulos {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 5rem 10%;
-  background: #F08E2B;
+  background: #F5DEB3; 
+  border-top: 2px solid #8B4513;
+  border-bottom: 2px solid #8B4513;
 }
 
 .capitulos h2 {
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: #050505;
+  color: #2F1B14;
+
 }
 
 .capitulos-container {
@@ -177,61 +198,70 @@ body {
 }
 
 .cap {
-  background:  #A0522D;
-  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  background: #D2691E; 
+  border: 2px solid #8B4513;
   border-radius: 10px;
   width: 250px;
-  transition: transform 0.3s, box-shadow 0.3s;
+
 }
 
 .cap img {
-  width: 40%;
+  width: 100%;
   border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid #8B4513;
 }
 
 .cap h3 {
   padding: 1rem;
   font-size: 1.2rem;
+  color: #2F1B14;
+  text-align: center;
 }
 
-.cap:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px white;
-}
 
 
 .footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
-  background:  #5F421C;
-  color: #777;
+  background: #8B4513; 
+  color: #F5F5DC; 
   font-size: 0.9rem;
+  border-top: 2px solid #D2691E;
 }
 
-/* Responsive */
-/*tablet*/
-@media (min-width: 851x) and (max-width:1024px) {
+
+@media (min-width: 851px) and (max-width: 1100px) {
   .hero h1 {
-    font-size: 1.rem;
+    font-size: 2.5rem;
   }
 
-  .card-container {
+  .card-container,
+  .capitulos-container {
     flex-direction: column;
     align-items: center;
   }
-
-  
 }
 
-
-/* celular*/
-@media screen and (max-width: 480px)
-{
-
-  .navbar{
+@media screen and (max-width: 480px) {
+  .navbar {
     flex-direction: column;
     align-items: center;
   }
-  
-  
+
+  .nav-links {
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card,
+  .cap {
+    width: 90%;
+  }
 }
