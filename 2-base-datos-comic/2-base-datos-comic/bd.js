@@ -1,29 +1,66 @@
-let comic={
-  "nombrecomic": "el reloj de las arenas",
+export let comic={
+  "nombrecomic": "El relog de las arenas",
   "sinopsis": "",
   "year": 2025,
-  "autores": ["melany","kevin"],
-  "persoanjes": [
+  "autores": ["Kevin","Melany"],
+  "personajes": [
 
-    {"nombre": "ninove", 
-  "imagen": "ninove-Photoroom.png"
-
+    { "id":1,
+      "nombre": "Ninov", 
+      "image": "./imagenes/ninov.png",
+      "descripcion":"Arqueologa "
 },
- {"nombre": "adad", 
-      "image": "adad-Photoroom.png"
-
+ { "id":2,
+  "nombre": "Adad", 
+      "image": "./imagenes/adad.png",
+  "descripcion":"arqueologo "
 },
- {"nombre": "naramsim", 
-      "image": "naramsin-Photoroom.png"
-
+ {"id":3,
+  "nombre": "Naransim", 
+      "image": "./imagenes/naransim.png",
+  "descripcion":"arqueologo "
 },
+ ],
+  "genero": "ficiion",
+  "portada": "./imagenes/el reloj de las arenas.png",
+    "escenas": [
+    {
+        "id":1,
+      "nombre": "Mitonic",
+      "personajes": "Mitonic",
+      "image": "./imagenes/mitonic.png",
+      "descripcion":"arqueologo ",
+      "video":"./imagenes/movie.mp4",
+       "ver": "mas capitulos",
+    },
+    
+    {
+         "id":2,
+      "nombre": " revolucion",
+      "personajes": "revolucion",
+      "image": "./imagenes/revoluvion.png",
+      "descripcion":"arqueologo ",
+      "video":"./imagenes/movie.mp4",
+      "ver": "mas capitulos",
+    },
+    {
+        "id":3,
+      "nombre": "bixuales",
+      "personajes": "bixuales",
+      "image": "./imagenes/bixuales.png",
+      "descripcion":"arqueologo ",
+      "video":"./imagenes/movie.mp4",
+     "ver": "mas capitulos",  
+      },
+
+
+     
 
 
 
 
 
 
-
-  ],
   
+  ]
 }
