@@ -56,3 +56,50 @@ comic.personajes.forEach(personajes=>{
     contenedor.appendChild(micard)
    
 })
+
+const slides = document.querySelectorAll(".slide");
+const carouselContainer = document.querySelector(".carousel-container");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const indicators = document.querySelector(".indicators");
+
+let index = 0;
+
+// Crear indicadores
+slides.forEach((_, i) => {
+  const dot = document.createElement("button");
+  if (i === 0) dot.classList.add("active");
+  indicators.appendChild(dot);
+
+  dot.addEventListener("click", () => moveToSlide(i));
+});
+
+const updateCarousel = () => {
+  carouselContainer.style.transform = `translateX(-${index * 100}%)`;
+
+  // Activar indicador correcto
+  document.querySelectorAll(".indicators button").forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
+};
+
+const moveToSlide = (i) => {
+  index = i;
+  updateCarousel();
+};
+
+nextBtn.addEventListener("click", () => {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener("click", () => {
+  index = (index - 1 + slides.length) % slides.length;
+  updateCarousel();
+});
+
+// Auto-play cada 4 segundos
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+}, 4000);

@@ -1,20 +1,53 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-
-
-
 body {
   font-family: 'Orbitron', sans-serif;
-  background-color: #0a0a0a;
+  background-color: #FFCC99;
   color: #fff;
- 
+}
+  
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: #A0522D;
+  position: fixed;
+  width: 90%;
+  top: 0;
+  z-index: 1000; 
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo span {
+  color: #FFCC99 ;
+}
+
+.nav-links a {
+  color: #fff;
+  margin-left: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #A0522D;
   
 }
+
+.nav-links .btn {
+  background: #A0522D;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+
 
 
 .hero {
@@ -63,12 +96,12 @@ body {
 }
 
 .play {
-  background: rgba(255, 0, 0, 0.73);
+  background:rgb(252, 125, 56) ;
   color: black;
 }
 
 .download {
-  background: #1a1a1a;
+  background: #e9b888;
   color: rgb(255, 89, 0);
   border: 1px solid #444;
 }
