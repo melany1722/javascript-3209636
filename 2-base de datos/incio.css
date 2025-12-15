@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+/* Fondo con imagen */
+.entrada {
+  height: 100vh;
+  background-image: url("fondo.jpg"); /* cambia por tu imagen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cuadro central */
+.cuadro-entrada {
+  background-color: rgba(18, 17, 15, 0.85);
+  padding: 40px 60px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+.cuadro-entrada h1 {
+  color: #C2A14D;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+.cuadro-entrada p {
+  color: #EFE8D8;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Botón */
+.btn-entrar {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #C2A14D;
+  color: #12110F;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-entrar:hover {
+  background-color: #9C7A3F;
+  transform: scale(1.05);
+}
+
